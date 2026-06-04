@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/STARLINECOMP/Downloads/index_18.html -->
+<html lang="ru" class="scroll-smooth"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Информационное пространство Университета Туран | Лаборатории и исследовательские центры</title>
+  <meta name="description" content="Уникальные лаборатории, кабинеты и исследовательские центры Университета Туран: цифровые технологии, искусственный интеллект, медиа, кино, криминалистика и психология.">
+  <meta name="theme-color" content="#448bc4">
+  <meta property="og:title" content="Информационное пространство Университета Туран">
+  <meta property="og:description" content="Уникальные лаборатории и исследовательские центры, где рождается будущее.">
+  <meta property="og:type" content="website">
+  <script src="./index_files/saved_resource"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif']
+          },
+          colors: {
+            night: '#ffffff',
+            graphite: '#f4f9fd',
+            ash: '#d9eaf7',
+            wine: '#1f5f86',
+            wineSoft: '#448bc4',
+            sand: '#448bc4',
+            cream: '#102b45'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./index_files/css2" rel="stylesheet">
+  <style>
+    :root {
+      --night: #ffffff;
+      --graphite: #f4f9fd;
+      --ash: #d9eaf7;
+      --wine: #1f5f86;
+      --wine-soft: #448bc4;
+      --sand: #448bc4;
+      --cream: #102b45;
+    }
+
+    * {
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--cream);
+      background:
+        radial-gradient(circle at 14% 18%, rgba(68, 139, 196, .22), transparent 30rem),
+        radial-gradient(circle at 84% 6%, rgba(160, 208, 241, .32), transparent 24rem),
+        linear-gradient(180deg, #ffffff 0%, #f4f9fd 48%, #eaf4fb 100%);
+      font-family: Inter, system-ui, sans-serif;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      opacity: .11;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(68, 139, 196, .11) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(68, 139, 196, .11) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom, black, transparent 78%);
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      opacity: .35;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E");
+      mix-blend-mode: soft-light;
+    }
+
+    .hero-media {
+      background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .84) 42%, rgba(255, 255, 255, .54) 100%),
+        linear-gradient(180deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, 1)),
+        url("assets/hero-labs.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .tech-layer {
+      background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .74)),
+        url("assets/ai-robotics.jpg");
+      background-size: cover;
+      background-position: center;
+      mix-blend-mode: multiply;
+      opacity: .14;
+      filter: saturate(.75) contrast(1.15);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, .76);
+      border: 1px solid rgba(68, 139, 196, .18);
+      box-shadow: 0 24px 90px rgba(31, 95, 134, .14);
+      backdrop-filter: blur(22px);
+    }
+
+    .header-quiet {
+      background: rgba(255, 255, 255, .6);
+      border-color: rgba(68, 139, 196, .12);
+      backdrop-filter: blur(14px);
+    }
+
+    .header-active {
+      background: rgba(255, 255, 255, .9);
+      border-color: rgba(68, 139, 196, .22);
+      box-shadow: 0 14px 54px rgba(31, 95, 134, .12);
+    }
+
+    .magnetic-link {
+      position: relative;
+    }
+
+    .magnetic-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -7px;
+      height: 1px;
+      transform: scaleX(0);
+      transform-origin: right;
+      background: linear-gradient(90deg, var(--sand), rgba(68, 139, 196, .16));
+      transition: transform .35s ease;
+    }
+
+    .magnetic-link:hover::after,
+    .magnetic-link:focus-visible::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .lab-card {
+      min-height: 380px;
+      cursor: pointer;
+      border: 1px solid rgba(68, 139, 196, .16);
+      background:
+        linear-gradient(140deg, rgba(255, 255, 255, .64), rgba(244, 249, 253, .5) 42%, rgba(68, 139, 196, .12)),
+        rgba(255, 255, 255, .52);
+      transition: transform .45s cubic-bezier(.2, .8, .2, 1), border-color .45s ease, background .45s ease, box-shadow .45s ease;
+      overflow: hidden;
+    }
+
+    .lab-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      opacity: .88;
+      background:
+        radial-gradient(circle at var(--mx, 65%) var(--my, 18%), rgba(68, 139, 196, .18), transparent 14rem),
+        linear-gradient(180deg, rgba(255, 255, 255, .86), rgba(255, 255, 255, .68) 42%, rgba(255, 255, 255, .9));
+      transition: opacity .45s ease;
+      pointer-events: none;
+    }
+
+    .lab-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(68, 139, 196, .42);
+      box-shadow: 0 30px 90px rgba(31, 95, 134, .18);
+    }
+
+    .lab-card:hover::before {
+      opacity: .74;
+    }
+
+
+    .lab-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background:
+        linear-gradient(to right, transparent 50%, rgba(255,255,255,.97) 100%),
+        linear-gradient(to top, rgba(255,255,255,.95) 0%, transparent 22%);
+      transition: background .45s ease;
+    }
+
+    .lab-card:hover::after {
+      background:
+        linear-gradient(to right, transparent 50%, rgba(255,255,255,.82) 100%),
+        linear-gradient(to top, rgba(255,255,255,.82) 0%, transparent 22%);
+    }
+
+    .lab-card .details {
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: max-height .5s ease, opacity .35s ease, transform .35s ease;
+    }
+
+    .lab-photo {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      margin: 0;
+      overflow: hidden;
+      background: #d9eaf7;
+      /* ensure photo never bleeds outside card border */
+      border-radius: inherit;
+    }
+
+    .lab-photo img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: .32;
+      filter: grayscale(1) saturate(.2) contrast(1.08) brightness(1.16);
+      transform: scale(1.02);
+      transition: transform .8s cubic-bezier(.2, .8, .2, 1), filter .55s ease, opacity .55s ease;
+    }
+
+    .lab-card:hover .lab-photo img {
+      opacity: .72;
+      transform: scale(1.075);
+      filter: grayscale(0) saturate(1.05) contrast(1.06) brightness(1);
+    }
+
+    .lab-card:hover .details,
+    .lab-card.expanded .details {
+      max-height: 220px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .masonry {
+      grid-auto-flow: dense;
+    }
+
+    .masonry .wide {
+      grid-column: span 2;
+    }
+
+    .masonry .tall {
+      min-height: 490px;
+    }
+
+    .list-mode .lab-card {
+      min-height: auto;
+      grid-column: 1 / -1;
+    }
+
+    .list-mode .lab-card .details {
+      max-height: 260px;
+      opacity: 1;
+      transform: none;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .75s ease, transform .75s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .marquee-track {
+      animation: marquee 28s linear infinite;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .modal-open {
+      overflow: hidden;
+    }
+
+    .modal-panel {
+      transform: translateY(18px) scale(.98);
+      opacity: 0;
+      transition: transform .34s ease, opacity .34s ease;
+    }
+
+    .modal-visible .modal-panel {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+
+    .gallery-thumb {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border: 1px solid rgba(68, 139, 196, .18);
+      background: #f4f9fd;
+      opacity: .66;
+      transition: opacity .25s ease, border-color .25s ease, transform .25s ease;
+    }
+
+    .gallery-thumb:hover,
+    .gallery-thumb.active {
+      opacity: 1;
+      border-color: rgba(68, 139, 196, .75);
+      transform: translateY(-2px);
+    }
+
+    .gallery-thumb img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .focus-ring:focus-visible {
+      outline: 2px solid rgba(68, 139, 196, .78);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 900px) {
+      .masonry .wide {
+        grid-column: span 1;
+      }
+    }
+
+    /* ── Mobile-first improvements ─────────────────────────── */
+
+    /* Touch-friendly tap highlight */
+    .lab-card, button, a {
+      -webkit-tap-highlight-color: rgba(68, 139, 196, .12);
+    }
+
+    /* Smooth scroll on iOS */
+    html {
+      -webkit-overflow-scrolling: touch;
+    }
+
+    @media (max-width: 640px) {
+      /* Hero section: tighter on small screens */
+      .hero-media {
+        min-height: 100svh;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        background-image:
+          linear-gradient(180deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.70) 55%, rgba(255,255,255,.90) 100%),
+          url("assets/hero-labs.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* Lab cards: comfortable height on mobile */
+      .lab-card {
+        min-height: 260px;
+      }
+
+      .masonry .tall {
+        min-height: 300px;
+      }
+
+      /* Hide details on mobile — tap opens modal instead */
+      .lab-card .details {
+        max-height: 0 !important;
+        opacity: 0 !important;
+        transform: translateY(8px) !important;
+      }
+
+      /* Accent word on mobile */
+      .lab-card [data-accent] {
+        font-size: 2.8rem !important;
+      }
+
+      /* Modal: full-screen bottom sheet on mobile */
+      #modal {
+        align-items: flex-end;
+        padding: 0;
+      }
+
+      .modal-panel {
+        max-height: 93svh;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 16px 16px 0 0;
+        transform: translateY(100%);
+      }
+
+      .modal-visible .modal-panel {
+        transform: translateY(0);
+      }
+
+      /* Modal: stack sidebar below content */
+      .modal-panel .grid.lg\\:grid-cols-\\[1fr_16rem\\] {
+        grid-template-columns: 1fr;
+      }
+
+      /* Modal image smaller on mobile */
+      #modalImage {
+        height: 200px;
+      }
+
+      /* Marquee text smaller */
+      .marquee-track {
+        font-size: 0.65rem;
+      }
+
+      /* Section padding tighter */
+      section.py-20 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      /* CTA buttons full-width on mobile */
+      .hero-media .flex.flex-col a {
+        text-align: center;
+      }
+
+      /* View toggle buttons larger tap targets */
+      #cardsView, #listView {
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+      }
+
+      /* Lab grid: single column on small mobile */
+      #labGrid {
+        grid-template-columns: 1fr;
+      }
+
+      /* Experience section: smaller heading */
+      #experience-title {
+        font-size: clamp(2rem, 10vw, 3rem);
+      }
+
+      /* Centres section heading */
+      #centres-title {
+        font-size: clamp(2rem, 10vw, 3rem);
+      }
+
+      /* Modal drag handle */
+      .modal-panel::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 4px;
+        border-radius: 2px;
+        background: rgba(31, 95, 134, .22);
+        margin: 10px auto 0;
+        flex-shrink: 0;
+      }
+
+      /* Footer stack  */
+      footer .flex {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+
+    /* Medium mobile / large phone (641–767px) */
+    @media (min-width: 641px) and (max-width: 767px) {
+      .hero-media aside {
+        display: grid !important;
+        margin-top: 2rem;
+        background: rgba(255,255,255,.62);
+        border: 1px solid rgba(68,139,196,.18);
+        backdrop-filter: blur(14px);
+        padding: 1rem;
+      }
+      #labGrid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Tablet (768–1023px) */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .hero-media aside {
+        display: block !important;
+        margin-top: 2rem;
+        background: rgba(255,255,255,.62);
+        border: 1px solid rgba(68,139,196,.18);
+        backdrop-filter: blur(14px);
+      }
+      #labGrid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Improve touch scrolling inside modal */
+    .modal-panel {
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.inset-x-0{left:0px;right:0px}.bottom-0{bottom:0px}.left-0{left:0px}.right-0{right:0px}.right-16{right:4rem}.right-\[-14rem\]{right:-14rem}.top-0{top:0px}.top-20{top:5rem}.top-44{top:11rem}.z-10{z-index:10}.z-50{z-index:50}.z-\[80\]{z-index:80}.z-\[6\]{z-index:6}.col-span-2{grid-column:span 2 / span 2}.mx-4{margin-left:1rem;margin-right:1rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-7{margin-bottom:1.75rem}.mb-8{margin-bottom:2rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-4{height:1rem}.h-44{height:11rem}.h-7{height:1.75rem}.h-72{height:18rem}.h-\[34rem\]{height:34rem}.h-px{height:1px}.max-h-\[92vh\]{max-height:92vh}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-32{width:8rem}.w-4{width:1rem}.w-44{width:11rem}.w-\[200\%\]{width:200%}.w-\[34rem\]{width:34rem}.w-full{width:100%}.min-w-0{min-width:0px}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.shrink-0{flex-shrink:0}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-10{gap:2.5rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-8{gap:2rem}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.whitespace-nowrap{white-space:nowrap}.rounded-full{border-radius:9999px}.rounded-sm{border-radius:0.125rem}.border{border-width:1px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-cream\/10{border-color:rgb(16 43 69 / 0.1)}.border-cream\/15{border-color:rgb(16 43 69 / 0.15)}.border-cream\/80{border-color:rgb(16 43 69 / 0.8)}.border-sand\/15{border-color:rgb(68 139 196 / 0.15)}.border-sand\/20{border-color:rgb(68 139 196 / 0.2)}.border-wineSoft\/60{border-color:rgb(68 139 196 / 0.6)}.bg-cream\/0{background-color:rgb(16 43 69 / 0)}.bg-cream\/10{background-color:rgb(16 43 69 / 0.1)}.bg-cream\/5{background-color:rgb(16 43 69 / 0.05)}.bg-graphite{--tw-bg-opacity:1;background-color:rgb(244 249 253 / var(--tw-bg-opacity, 1))}.bg-graphite\/70{background-color:rgb(244 249 253 / 0.7)}.bg-night{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-night\/30{background-color:rgb(255 255 255 / 0.3)}.bg-night\/90{background-color:rgb(255 255 255 / 0.9)}.bg-night\/95{background-color:rgb(255 255 255 / 0.95)}.bg-sand{--tw-bg-opacity:1;background-color:rgb(68 139 196 / var(--tw-bg-opacity, 1))}.bg-white\/70{background-color:rgb(255 255 255 / 0.7)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-wine{--tw-bg-opacity:1;background-color:rgb(31 95 134 / var(--tw-bg-opacity, 1))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-night{--tw-gradient-from:#ffffff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-10{padding-bottom:2.5rem}.pb-5{padding-bottom:1.25rem}.pt-2{padding-top:0.5rem}.pt-28{padding-top:7rem}.font-serif{font-family:Playfair Display, Georgia, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-6{line-height:1.5rem}.leading-7{line-height:1.75rem}.leading-8{line-height:2rem}.leading-none{line-height:1}.leading-tight{line-height:1.25}.tracking-\[\.14em\]{letter-spacing:.14em}.tracking-\[\.18em\]{letter-spacing:.18em}.tracking-\[\.22em\]{letter-spacing:.22em}.text-cream{--tw-text-opacity:1;color:rgb(16 43 69 / var(--tw-text-opacity, 1))}.text-cream\/40{color:rgb(16 43 69 / 0.4)}.text-cream\/45{color:rgb(16 43 69 / 0.45)}.text-cream\/50{color:rgb(16 43 69 / 0.5)}.text-cream\/55{color:rgb(16 43 69 / 0.55)}.text-cream\/60{color:rgb(16 43 69 / 0.6)}.text-cream\/65{color:rgb(16 43 69 / 0.65)}.text-cream\/70{color:rgb(16 43 69 / 0.7)}.text-cream\/75{color:rgb(16 43 69 / 0.75)}.text-cream\/80{color:rgb(16 43 69 / 0.8)}.text-night{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-night\/80{color:rgb(255 255 255 / 0.8)}.text-sand{--tw-text-opacity:1;color:rgb(68 139 196 / var(--tw-text-opacity, 1))}.text-wine{--tw-text-opacity:1;color:rgb(31 95 134 / var(--tw-text-opacity, 1))}.text-cream\/10{color:rgb(16 43 69 / 0.1)}.text-cream\/35{color:rgb(16 43 69 / 0.35)}.opacity-0{opacity:0}.opacity-\[\.18\]{opacity:.18}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.hover\:border-sand\/50:hover{border-color:rgb(68 139 196 / 0.5)}.hover\:border-sand\/55:hover{border-color:rgb(68 139 196 / 0.55)}.hover\:bg-cream\/10:hover{background-color:rgb(16 43 69 / 0.1)}.hover\:bg-wine:hover{--tw-bg-opacity:1;background-color:rgb(31 95 134 / var(--tw-bg-opacity, 1))}.hover\:text-cream:hover{--tw-text-opacity:1;color:rgb(16 43 69 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:translate-y-1{--tw-translate-y:0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:border-sand\/45{border-color:rgb(68 139 196 / 0.45)}.group:hover .group-hover\:bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:text-sand\/30{color:rgb(68 139 196 / 0.3)}@media (min-width: 640px){.sm\:block{display:block}.sm\:h-96{height:24rem}.sm\:w-36{width:9rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:justify-between{justify-content:space-between}.sm\:p-6{padding:1.5rem}.sm\:p-8{padding:2rem}.sm\:p-7{padding:1.75rem}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:block{display:block}.lg\:grid{display:grid}.lg\:grid-cols-\[\.95fr_1\.05fr\]{grid-template-columns:.95fr 1.05fr}.lg\:grid-cols-\[1fr_16rem\]{grid-template-columns:1fr 16rem}.lg\:grid-cols-\[1fr_22rem\]{grid-template-columns:1fr 22rem}.lg\:grid-cols-\[1fr_27rem\]{grid-template-columns:1fr 27rem}.lg\:grid-cols-\[24rem_1fr\]{grid-template-columns:24rem 1fr}.lg\:items-end{align-items:flex-end}.lg\:items-center{align-items:center}.lg\:gap-10{gap:2.5rem}.lg\:py-28{padding-top:7rem;padding-bottom:7rem}.lg\:pb-16{padding-bottom:4rem}}@media (min-width: 1280px){.xl\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+<body>
+  <header id="siteHeader" class="header-quiet fixed left-0 right-0 top-0 z-50 border-b transition-all duration-500">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
+      <a href="file:///C:/Users/STARLINECOMP/Downloads/index_18.html#top" class="focus-ring group flex items-center gap-3 rounded-sm" aria-label="Университет Туран">
+        <span class="flex h-11 w-32 items-center justify-center border border-sand/20 bg-white/90 px-3 shadow-sm transition group-hover:border-sand/45 group-hover:bg-white sm:w-36">
+          <img class="h-7 w-full object-contain" src="./index_files/logo.svg" alt="Логотип Университета Туран">
+        </span>
+        <span class="leading-none">
+          <span class="block text-sm font-semibold uppercase tracking-[.18em] text-cream">Labs</span>
+          <span class="hidden text-[11px] uppercase tracking-[.22em] text-cream/45 sm:block">University Labs</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-8 text-sm text-cream/70 md:flex" aria-label="Основная навигация">
+        <a class="magnetic-link focus-ring rounded-sm transition hover:text-cream" href="file:///C:/Users/STARLINECOMP/Downloads/index_18.html#labs">Лаборатории</a>
+        <a class="magnetic-link focus-ring rounded-sm transition hover:text-cream" href="file:///C:/Users/STARLINECOMP/Downloads/index_18.html#centres">Центры</a>
+        <a class="magnetic-link focus-ring rounded-sm transition hover:text-cream" href="file:///C:/Users/STARLINECOMP/Downloads/index_18.html#experience">Пространство</a>
+      </nav>
+
+      <button id="mobileMenuButton" class="focus-ring flex h-10 w-10 items-center justify-center border border-cream/15 bg-cream/5 text-cream md:hidden" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="h-4 w-4 border-y border-cream/80"></span>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden border-t border-cream/10 bg-night/95 px-5 pb-5 pt-2 text-sm text-cream/75 md:hidden">
+      <a class="block py-3" href="file:///C:/Users/STARLINECOMP/Downloads/index_18.html#labs">Лаборатории</a>
+      <a class="block py-3" href="file:///C:/Users/STARLINECOMP/Downloads/index_18.html#centres">Центры</a>
+      <a class="block py-3" href="file:///C:/Users/STARLINECOMP/Downloads/index_18.html#experience">Пространство</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-media relative flex min-h-screen items-end overflow-hidden px-5 pb-10 pt-28 sm:px-8 lg:pb-16" aria-labelledby="hero-title">
+      <div class="tech-layer absolute inset-0"></div>
+      <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-night to-transparent"></div>
+      <div class="pointer-events-none absolute right-[-14rem] top-20 h-[34rem] w-[34rem] rounded-full border border-sand/20 hidden sm:block"></div>
+      <div class="pointer-events-none absolute right-16 top-44 hidden h-44 w-44 rounded-full border border-wineSoft/60 lg:block"></div>
+
+      <div class="relative z-10 w-full mx-auto max-w-7xl lg:grid lg:grid-cols-[1fr_22rem] lg:items-end lg:gap-10">
+        <div class="w-full min-w-0">
+        <p class="reveal mb-6 border border-cream/15 bg-cream/5 px-4 py-2 text-xs font-semibold uppercase text-sand backdrop-blur visible" style="letter-spacing:.08em; word-break:break-word;">
+          Исследовательская среда нового поколения
+        </p>
+        <h1 id="hero-title" class="reveal font-serif font-bold text-cream visible" style="font-size:clamp(1.9rem,7vw,8rem); line-height:1; word-break:break-word;">
+          Информационное пространство Университета Туран
+        </h1>
+        <p class="reveal mt-6 text-base leading-7 text-cream/70 visible">
+          Уникальные лаборатории и исследовательские центры, где рождается будущее
+        </p>
+        <div class="reveal mt-8 flex flex-col gap-3 visible">
+          <a href="file:///C:/Users/STARLINECOMP/Downloads/index_18.html#labs" class="focus-ring group flex items-center justify-center gap-3 bg-sand px-6 py-4 text-sm font-bold uppercase text-night transition hover:bg-wine" style="letter-spacing:.1em;">
+            Исследовать лаборатории
+            <span class="transition group-hover:translate-y-1" aria-hidden="true">↓</span>
+          </a>
+          <a href="file:///C:/Users/STARLINECOMP/Downloads/index_18.html#experience" class="focus-ring flex items-center justify-center border border-cream/15 px-6 py-4 text-sm font-semibold uppercase text-cream/80 transition hover:border-sand/55 hover:text-cream" style="letter-spacing:.1em;">
+            Смотреть пространство
+          </a>
+        </div>
+        </div>
+
+        <aside class="hidden lg:block reveal glass p-5 visible" aria-label="Краткая статистика">
+          <div class="grid grid-cols-2 gap-3">
+            <div class="border border-cream/10 bg-night/30 p-4">
+              <p class="font-serif text-4xl text-sand">11</p>
+              <p class="mt-2 text-xs uppercase text-cream/55" style="letter-spacing:.08em">объектов</p>
+            </div>
+            <div class="border border-cream/10 bg-night/30 p-4">
+              <p class="font-serif text-4xl text-sand">AI</p>
+              <p class="mt-2 text-xs uppercase text-cream/55" style="letter-spacing:.08em">робото­техника</p>
+            </div>
+            <div class="col-span-2 border border-cream/10 bg-night/30 p-4">
+              <p class="text-sm leading-6 text-cream/70">Криминалистика, кино, медиа, ИИ и психология — единая университетская экосистема.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="relative overflow-hidden border-y border-cream/10 bg-graphite/70 py-4" aria-label="Направления">
+      <div class="marquee-track flex w-[200%] gap-4 whitespace-nowrap text-xs font-semibold uppercase tracking-[.22em] text-cream/40">
+        <span class="mx-4">Digital Lab</span><span class="text-sand">•</span>
+        <span class="mx-4">E-Learning</span><span class="text-sand">•</span>
+        <span class="mx-4">AI &amp; Robotics</span><span class="text-sand">•</span>
+        <span class="mx-4">MediaLab</span><span class="text-sand">•</span>
+        <span class="mx-4">Cinema</span><span class="text-sand">•</span>
+        <span class="mx-4">Криминалистика</span><span class="text-sand">•</span>
+        <span class="mx-4">Психология</span><span class="text-sand">•</span>
+        <span class="mx-4">Великая степь</span><span class="text-sand">•</span>
+        <span class="mx-4">Digital Lab</span><span class="text-sand">•</span>
+        <span class="mx-4">E-Learning</span><span class="text-sand">•</span>
+        <span class="mx-4">AI &amp; Robotics</span><span class="text-sand">•</span>
+        <span class="mx-4">MediaLab</span><span class="text-sand">•</span>
+        <span class="mx-4">Cinema</span><span class="text-sand">•</span>
+        <span class="mx-4">Криминалистика</span><span class="text-sand">•</span>
+        <span class="mx-4">Психология</span><span class="text-sand">•</span>
+        <span class="mx-4">Великая степь</span>
+      </div>
+    </section>
+
+    <section id="labs" class="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28" aria-labelledby="labs-title">
+      <div class="reveal mb-12 grid gap-8 lg:grid-cols-[1fr_27rem] lg:items-end visible">
+        <div>
+          <p class="mb-4 text-xs font-bold uppercase tracking-[.22em] text-sand">Каталог пространств</p>
+          <h2 id="labs-title" class="font-serif text-4xl font-bold leading-tight text-cream sm:text-6xl">
+            Лаборатории, кабинеты и центры как интеллектуальная карта университета
+          </h2>
+        </div>
+        <div class="glass p-3">
+          <div class="grid grid-cols-2 gap-2" role="group" aria-label="Режим просмотра">
+            <button id="cardsView" class="focus-ring bg-sand px-4 py-3 text-sm font-bold uppercase tracking-[.14em] text-night transition" type="button">Карточки</button>
+            <button id="listView" class="focus-ring px-4 py-3 text-sm font-bold uppercase tracking-[.14em] text-cream/60 transition hover:bg-cream/10" type="button">Список</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="labGrid" class="masonry grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <article class="lab-card reveal wide group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="0" tabindex="0" aria-label="Научно-исследовательская лаборатория «Лаборатория судебных экспертиз»">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/forensic-lab.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">Судебная экспертиза</p>
+              <span class="text-xs text-cream/35 shrink-0">01</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">Научно-исследовательская лаборатория «Лаборатория судебных экспертиз»</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Профессиональная среда для экспертного анализа, правовых исследований и практической подготовки.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">Научно-исследовательская лаборатория «Лаборатория судебных экспертиз» объединяет учебную, исследовательскую и практико-ориентированную работу в сфере судебной экспертизы. Пространство помогает студентам и исследователям изучать методы экспертного анализа, моделировать профессиональные кейсы и формировать навыки точной, аргументированной работы с доказательственными материалами.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">Экспертиза</span>
+          </div>
+        </article>
+      
+        <article class="lab-card reveal group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="1" tabindex="0" aria-label="Лаборатория E-Learning" style="--mx: 49.5px; --my: 158px;">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/e-learning.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">Цифровое обучение</p>
+              <span class="text-xs text-cream/35 shrink-0">02</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">Лаборатория E-Learning</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Площадка для создания онлайн-курсов, гибридных форматов и образовательных цифровых решений.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">Лаборатория E-Learning предназначена для развития электронного обучения, записи образовательного контента и внедрения современных цифровых инструментов в учебный процесс. Здесь проектируются онлайн-курсы, интерактивные материалы и гибридные сценарии обучения, которые делают университетскую среду более гибкой, доступной и технологичной.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">Learning</span>
+          </div>
+        </article>
+      
+        <article class="lab-card reveal tall group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="2" tabindex="0" aria-label="Лаборатория «DIGITAL LAB»">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/digital-lab.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">Digital</p>
+              <span class="text-xs text-cream/35 shrink-0">03</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">Лаборатория «DIGITAL LAB»</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Креативно-технологическая лаборатория для цифровых проектов, прототипирования и прикладных экспериментов.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">Лаборатория «DIGITAL LAB» работает как пространство цифрового прототипирования, командной разработки и исследования современных технологических решений. Она поддерживает проектную деятельность студентов, развитие цифровых компетенций и создание прикладных продуктов на стыке образования, бизнеса и инноваций.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">Digital</span>
+          </div>
+        </article>
+      
+        <article class="lab-card reveal wide group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="3" tabindex="0" aria-label="Научно-исследовательская лаборатория «R&amp;D-лаборатория искусственного интеллекта и робототехники»" style="--mx: 485.5px; --my: 348px;">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/ai-robotics.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">AI &amp; Robotics</p>
+              <span class="text-xs text-cream/35 shrink-0">04</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">Научно-исследовательская лаборатория «R&amp;D-лаборатория искусственного интеллекта и робототехники»</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Исследовательская платформа для ИИ, робототехники, автоматизации и интеллектуальных систем.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">Научно-исследовательская лаборатория «R&amp;D-лаборатория искусственного интеллекта и робототехники» ориентирована на разработку, тестирование и исследование интеллектуальных систем. Здесь изучаются алгоритмы искусственного интеллекта, роботизированные решения, автоматизация процессов и инженерные подходы, которые связывают академическую науку с реальными технологическими задачами.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">AI</span>
+          </div>
+        </article>
+      
+        <article class="lab-card reveal group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="4" tabindex="0" aria-label="Кабинет Международного исследовательского центра «Великая степь: цивилизация Турана»">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/great-steppe.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">Цивилизация Турана</p>
+              <span class="text-xs text-cream/35 shrink-0">05</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">Кабинет Международного исследовательского центра «Великая степь: цивилизация Турана»</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Интеллектуальное пространство для изучения наследия Великой степи и цивилизационной идентичности.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">Кабинет Международного исследовательского центра «Великая степь: цивилизация Турана» посвящен исследованию историко-культурного наследия, гуманитарных процессов и цивилизационного значения Великой степи. Пространство формирует академическую среду для дискуссий, научных встреч, архивной работы и осмысления идентичности Турана в современном контексте.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">Steppe</span>
+          </div>
+        </article>
+      
+        <article class="lab-card reveal tall group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="5" tabindex="0" aria-label="Специализированный кабинет «Зал судебных заседаний»">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/court-room.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">Legal practice</p>
+              <span class="text-xs text-cream/35 shrink-0">06</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">Специализированный кабинет «Зал судебных заседаний»</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Учебная модель судебного пространства для практики процессов, дебатов и правовой аргументации.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">Специализированный кабинет «Зал судебных заседаний» воссоздает атмосферу реального судебного процесса и позволяет студентам отрабатывать профессиональные роли, процессуальную коммуникацию и навыки публичной правовой аргументации. Это пространство делает юридическое образование предметным, динамичным и максимально близким к практике.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">Court</span>
+          </div>
+        </article>
+      
+        <article class="lab-card reveal group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="6" tabindex="0" aria-label="Учебно-исследовательская лаборатория «Центр криминалистической тактики»">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/criminalistics-tactics.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">Криминалистика</p>
+              <span class="text-xs text-cream/35 shrink-0">07</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">Учебно-исследовательская лаборатория «Центр криминалистической тактики»</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Тактическая лаборатория для анализа ситуаций, моделирования действий и криминалистической подготовки.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">Учебно-исследовательская лаборатория «Центр криминалистической тактики» предназначена для изучения криминалистических методов, моделирования профессиональных ситуаций и анализа тактических решений. Здесь студенты осваивают логику расследования, работу с версиями, последовательность действий и культуру доказательного мышления.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">Tactics</span>
+          </div>
+        </article>
+      
+        <article class="lab-card reveal group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="7" tabindex="0" aria-label="Кинозал имени Сатыбалды Нарымбетова">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/narymbetov-cinema.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">Кино</p>
+              <span class="text-xs text-cream/35 shrink-0">08</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">Кинозал имени Сатыбалды Нарымбетова</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Культурное пространство для просмотров, обсуждений, кинолекций и авторских встреч.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">Кинозал имени Сатыбалды Нарымбетова является пространством уважения к национальной кинематографической школе и современной экранной культуре. Здесь проходят показы, обсуждения, лекции и творческие встречи, которые помогают студентам воспринимать кино как язык исследования общества, истории и человеческого опыта.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">Cinema</span>
+          </div>
+        </article>
+      
+        <article class="lab-card reveal wide group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="8" tabindex="0" aria-label="MediaLab" style="--mx: 485.5px; --my: 330px;">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/medialab.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">Медиа</p>
+              <span class="text-xs text-cream/35 shrink-0">09</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">MediaLab</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Студия для медиа-производства, журналистики, визуального контента и цифровых коммуникаций.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">MediaLab создан для работы с современными форматами медиа: видео, аудио, визуальным сторителлингом, цифровыми коммуникациями и журналистскими проектами. Пространство поддерживает практику съемки, монтажа, интервью, подкастов и медиапроектирования, превращая идеи студентов в профессионально оформленные материалы.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">Media</span>
+          </div>
+        </article>
+      
+        <article class="lab-card reveal tall group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="9" tabindex="0" aria-label="Научно-практическая лаборатория по исследованию и коррекции психо-эмоциональных состояний">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/psycho-emotional-lab.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">Психология</p>
+              <span class="text-xs text-cream/35 shrink-0">10</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">Научно-практическая лаборатория по исследованию и коррекции психо-эмоциональных состояний</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Исследовательская среда для диагностики, анализа и коррекции психо-эмоционального состояния.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">Научно-практическая лаборатория по исследованию и коррекции психо-эмоциональных состояний ориентирована на изучение психологического благополучия, эмоциональной устойчивости и методов сопровождения человека. Здесь соединяются исследовательская работа, практическая диагностика и разработка корректирующих подходов в комфортной и этичной профессиональной среде.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">Mind</span>
+          </div>
+        </article>
+      
+        <article class="lab-card reveal wide group relative flex flex-col justify-between p-5 sm:p-7 visible" data-index="10" tabindex="0" aria-label="TURAN ARTS CENTRE CINEMA (Кинопавильон)" style="--mx: 481.5px; --my: 6px;">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="file:///C:/Users/STARLINECOMP/Downloads/assets/turan-arts-cinema.jpg" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">Production</p>
+              <span class="text-xs text-cream/35 shrink-0">11</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">TURAN ARTS CENTRE CINEMA (Кинопавильон)</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">Кинопавильон для съемок, постановочной работы и практики экранного производства.</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">TURAN ARTS CENTRE CINEMA (Кинопавильон) представляет собой творческо-производственное пространство для съемочного процесса, постановочных экспериментов и практической подготовки в сфере кино и визуальных искусств. Павильон позволяет студентам работать со светом, камерой, сценой и командной организацией кинопроизводства.</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent="" class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1; font-size: 4.5rem;">Arts</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="centres" class="relative overflow-hidden bg-graphite py-20 text-cream lg:py-28" aria-labelledby="centres-title">
+      <div class="absolute inset-0 opacity-[.18]" style="background-image: linear-gradient(90deg, #448bc4 1px, transparent 1px), linear-gradient(#448bc4 1px, transparent 1px); background-size: 54px 54px;"></div>
+      <div class="relative mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[.95fr_1.05fr] lg:items-center">
+        <div class="reveal visible">
+          <p class="mb-4 text-xs font-bold uppercase tracking-[.22em] text-wine">Почему это важно</p>
+          <h2 id="centres-title" class="font-serif text-4xl font-bold leading-tight sm:text-6xl">Среда, где знание становится практикой</h2>
+        </div>
+        <div class="reveal grid gap-4 sm:grid-cols-2">
+          <div class="border border-sand/15 bg-night p-6 text-cream">
+            <p class="font-serif text-5xl text-sand">01</p>
+            <h3 class="mt-8 text-lg font-bold">Междисциплинарность</h3>
+            <p class="mt-3 text-sm leading-6 text-cream/70">Право, медиа, IT, гуманитарные исследования и психология работают в одной архитектуре возможностей.</p>
+          </div>
+          <div class="border border-sand/15 bg-white/70 p-6">
+            <p class="font-serif text-5xl text-wine">02</p>
+            <h3 class="mt-8 text-lg font-bold">Практическая сцена</h3>
+            <p class="mt-3 text-sm leading-6 text-cream/60">Каждое пространство спроектировано как место действия: эксперимента, съемки, анализа, суда, исследования.</p>
+          </div>
+          <div class="border border-sand/15 bg-white/70 p-6">
+            <p class="font-serif text-5xl text-wine">03</p>
+            <h3 class="mt-8 text-lg font-bold">Цифровая культура</h3>
+            <p class="mt-3 text-sm leading-6 text-cream/60">От E-Learning до робототехники: технологическая грамотность становится частью академической повседневности.</p>
+          </div>
+          <div class="border border-sand/15 bg-wine p-6 text-night">
+            <p class="font-serif text-5xl text-night">04</p>
+            <h3 class="mt-8 text-lg font-bold">Идентичность Турана</h3>
+            <p class="mt-3 text-sm leading-6 text-night/80">Эстетика степи, история цивилизации и современная наука соединяются в узнаваемый университетский образ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28" aria-labelledby="experience-title">
+      <div class="reveal grid gap-8 lg:grid-cols-[24rem_1fr] lg:items-end">
+        <div>
+          <p class="mb-4 text-xs font-bold uppercase tracking-[.22em] text-sand">Навигация по опыту</p>
+          <h2 id="experience-title" class="font-serif text-4xl font-bold leading-tight text-cream sm:text-6xl">Один маршрут, разные формы будущего</h2>
+        </div>
+        <p class="max-w-3xl text-lg leading-8 text-cream/65">Сайт построен как живой каталог: быстрый обзор, детальная панель и тактильные микро-анимации помогают увидеть не просто список помещений, а целостную исследовательскую инфраструктуру Университета Туран.</p>
+      </div>
+
+      <div class="mt-12 grid gap-5 md:grid-cols-3">
+        <article class="reveal glass p-6">
+          <span class="text-xs font-bold uppercase tracking-[.22em] text-sand">Discover</span>
+          <h3 class="mt-8 text-2xl font-bold">Быстрое погружение</h3>
+          <p class="mt-4 text-sm leading-6 text-cream/60">Карточки дают эмоциональный первый контакт и раскрывают подробности без перегруза.</p>
+        </article>
+        <article class="reveal glass p-6">
+          <span class="text-xs font-bold uppercase tracking-[.22em] text-sand">Research</span>
+          <h3 class="mt-8 text-2xl font-bold">Полный контекст</h3>
+          <p class="mt-4 text-sm leading-6 text-cream/60">Модальное окно превращает каждый объект в отдельную мини-историю с фокусом на назначении.</p>
+        </article>
+        <article class="reveal glass p-6">
+          <span class="text-xs font-bold uppercase tracking-[.22em] text-sand">Turan</span>
+          <h3 class="mt-8 text-2xl font-bold">Премиальная сдержанность</h3>
+          <p class="mt-4 text-sm leading-6 text-cream/60">Белая палитра, синие акценты и строгая типографика поддерживают статусность университета.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-cream/10 px-5 py-10 sm:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 text-sm text-cream/50 sm:flex-row sm:items-center sm:justify-between">
+      <p>© 2026 Университет Туран. Информационное пространство.</p>
+      <a class="focus-ring text-sand transition hover:text-cream" href="file:///C:/Users/STARLINECOMP/Downloads/index_18.html#top">Вернуться наверх ↑</a>
+    </div>
+  </footer>
+
+  <div id="modal" class="pointer-events-none fixed inset-0 z-[80] flex items-end justify-center bg-cream/0 p-3 opacity-0 transition duration-300 sm:items-center sm:p-6" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div id="modalBackdrop" class="absolute inset-0"></div>
+    <div class="modal-panel relative max-h-[92vh] w-full max-w-4xl overflow-y-auto border border-sand/20 bg-night shadow-2xl">
+      <div class="sticky top-0 z-10 flex items-center justify-between border-b border-sand/15 bg-night/90 p-5 backdrop-blur">
+        <p id="modalKicker" class="text-xs font-bold uppercase tracking-[.22em] text-sand"></p>
+        <button id="closeModal" class="focus-ring flex h-10 w-10 items-center justify-center border border-cream/15 text-cream/75 transition hover:border-sand/50 hover:text-cream" type="button" aria-label="Закрыть окно">×</button>
+      </div>
+      <div class="grid gap-8 p-6 sm:p-8 lg:grid-cols-[1fr_16rem]">
+        <div>
+          <figure class="mb-7 overflow-hidden border border-sand/15 bg-graphite">
+            <img id="modalImage" class="h-72 w-full object-cover sm:h-96" src="file:///C:/Users/STARLINECOMP/Downloads/index_18.html" alt="">
+          </figure>
+          <div id="modalGallery" class="mb-8 grid grid-cols-4 gap-3" aria-label="Галерея фотографий"></div>
+          <h2 id="modalTitle" class="font-serif text-3xl font-bold leading-tight text-cream sm:text-5xl"></h2>
+          <p id="modalText" class="mt-6 text-base leading-8 text-cream/70"></p>
+        </div>
+        <aside class="border border-sand/15 bg-graphite p-5">
+          <p class="text-xs font-bold uppercase tracking-[.22em] text-cream/40">Фокус</p>
+          <p id="modalFocus" class="mt-5 text-2xl font-bold text-sand"></p>
+          <div class="mt-8 h-px bg-cream/10"></div>
+          <p class="mt-6 text-sm leading-6 text-cream/55">Пространство включено в единую карту лабораторий, кабинетов и центров Университета Туран.</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const labs = [
+      {
+        title: 'Научно-исследовательская лаборатория «Лаборатория судебных экспертиз»',
+        tag: 'Судебная экспертиза',
+        brief: 'Профессиональная среда для экспертного анализа, правовых исследований и практической подготовки.',
+        full: 'Научно-исследовательская лаборатория «Лаборатория судебных экспертиз» объединяет учебную, исследовательскую и практико-ориентированную работу в сфере судебной экспертизы. Пространство помогает студентам и исследователям изучать методы экспертного анализа, моделировать профессиональные кейсы и формировать навыки точной, аргументированной работы с доказательственными материалами.',
+        image: 'assets/forensic-lab.jpg',
+        accent: 'Экспертиза',
+        size: 'wide'
+      },
+      {
+        title: 'Лаборатория E-Learning',
+        tag: 'Цифровое обучение',
+        brief: 'Площадка для создания онлайн-курсов, гибридных форматов и образовательных цифровых решений.',
+        full: 'Лаборатория E-Learning предназначена для развития электронного обучения, записи образовательного контента и внедрения современных цифровых инструментов в учебный процесс. Здесь проектируются онлайн-курсы, интерактивные материалы и гибридные сценарии обучения, которые делают университетскую среду более гибкой, доступной и технологичной.',
+        image: 'assets/e-learning.jpg',
+        accent: 'Learning',
+        size: ''
+      },
+      {
+        title: 'Лаборатория «DIGITAL LAB»',
+        tag: 'Digital',
+        brief: 'Креативно-технологическая лаборатория для цифровых проектов, прототипирования и прикладных экспериментов.',
+        full: 'Лаборатория «DIGITAL LAB» работает как пространство цифрового прототипирования, командной разработки и исследования современных технологических решений. Она поддерживает проектную деятельность студентов, развитие цифровых компетенций и создание прикладных продуктов на стыке образования, бизнеса и инноваций.',
+        image: 'assets/digital-lab.jpg',
+        accent: 'Digital',
+        size: 'tall'
+      },
+      {
+        title: 'Научно-исследовательская лаборатория «R&D-лаборатория искусственного интеллекта и робототехники»',
+        tag: 'AI & Robotics',
+        brief: 'Исследовательская платформа для ИИ, робототехники, автоматизации и интеллектуальных систем.',
+        full: 'Научно-исследовательская лаборатория «R&D-лаборатория искусственного интеллекта и робототехники» ориентирована на разработку, тестирование и исследование интеллектуальных систем. Здесь изучаются алгоритмы искусственного интеллекта, роботизированные решения, автоматизация процессов и инженерные подходы, которые связывают академическую науку с реальными технологическими задачами.',
+        image: 'assets/ai-robotics.jpg',
+        accent: 'AI',
+        size: 'wide'
+      },
+      {
+        title: 'Кабинет Международного исследовательского центра «Великая степь: цивилизация Турана»',
+        tag: 'Цивилизация Турана',
+        brief: 'Интеллектуальное пространство для изучения наследия Великой степи и цивилизационной идентичности.',
+        full: 'Кабинет Международного исследовательского центра «Великая степь: цивилизация Турана» посвящен исследованию историко-культурного наследия, гуманитарных процессов и цивилизационного значения Великой степи. Пространство формирует академическую среду для дискуссий, научных встреч, архивной работы и осмысления идентичности Турана в современном контексте.',
+        image: 'assets/great-steppe.jpg',
+        accent: 'Steppe',
+        size: ''
+      },
+      {
+        title: 'Специализированный кабинет «Зал судебных заседаний»',
+        tag: 'Legal practice',
+        brief: 'Учебная модель судебного пространства для практики процессов, дебатов и правовой аргументации.',
+        full: 'Специализированный кабинет «Зал судебных заседаний» воссоздает атмосферу реального судебного процесса и позволяет студентам отрабатывать профессиональные роли, процессуальную коммуникацию и навыки публичной правовой аргументации. Это пространство делает юридическое образование предметным, динамичным и максимально близким к практике.',
+        image: 'assets/court-room.jpg',
+        accent: 'Court',
+        size: 'tall'
+      },
+      {
+        title: 'Учебно-исследовательская лаборатория «Центр криминалистической тактики»',
+        tag: 'Криминалистика',
+        brief: 'Тактическая лаборатория для анализа ситуаций, моделирования действий и криминалистической подготовки.',
+        full: 'Учебно-исследовательская лаборатория «Центр криминалистической тактики» предназначена для изучения криминалистических методов, моделирования профессиональных ситуаций и анализа тактических решений. Здесь студенты осваивают логику расследования, работу с версиями, последовательность действий и культуру доказательного мышления.',
+        image: 'assets/criminalistics-tactics.jpg',
+        accent: 'Tactics',
+        size: ''
+      },
+      {
+        title: 'Кинозал имени Сатыбалды Нарымбетова',
+        tag: 'Кино',
+        brief: 'Культурное пространство для просмотров, обсуждений, кинолекций и авторских встреч.',
+        full: 'Кинозал имени Сатыбалды Нарымбетова является пространством уважения к национальной кинематографической школе и современной экранной культуре. Здесь проходят показы, обсуждения, лекции и творческие встречи, которые помогают студентам воспринимать кино как язык исследования общества, истории и человеческого опыта.',
+        image: 'assets/narymbetov-cinema.jpg',
+        accent: 'Cinema',
+        size: ''
+      },
+      {
+        title: 'MediaLab',
+        tag: 'Медиа',
+        brief: 'Студия для медиа-производства, журналистики, визуального контента и цифровых коммуникаций.',
+        full: 'MediaLab создан для работы с современными форматами медиа: видео, аудио, визуальным сторителлингом, цифровыми коммуникациями и журналистскими проектами. Пространство поддерживает практику съемки, монтажа, интервью, подкастов и медиапроектирования, превращая идеи студентов в профессионально оформленные материалы.',
+        image: 'assets/medialab.jpg',
+        accent: 'Media',
+        size: 'wide'
+      },
+      {
+        title: 'Научно-практическая лаборатория по исследованию и коррекции психо-эмоциональных состояний',
+        tag: 'Психология',
+        brief: 'Исследовательская среда для диагностики, анализа и коррекции психо-эмоционального состояния.',
+        full: 'Научно-практическая лаборатория по исследованию и коррекции психо-эмоциональных состояний ориентирована на изучение психологического благополучия, эмоциональной устойчивости и методов сопровождения человека. Здесь соединяются исследовательская работа, практическая диагностика и разработка корректирующих подходов в комфортной и этичной профессиональной среде.',
+        image: 'assets/psycho-emotional-lab.jpg',
+        accent: 'Mind',
+        size: 'tall'
+      },
+      {
+        title: 'TURAN ARTS CENTRE CINEMA (Кинопавильон)',
+        tag: 'Production',
+        brief: 'Кинопавильон для съемок, постановочной работы и практики экранного производства.',
+        full: 'TURAN ARTS CENTRE CINEMA (Кинопавильон) представляет собой творческо-производственное пространство для съемочного процесса, постановочных экспериментов и практической подготовки в сфере кино и визуальных искусств. Павильон позволяет студентам работать со светом, камерой, сценой и командной организацией кинопроизводства.',
+        image: 'assets/turan-arts-cinema.jpg',
+        accent: 'Arts',
+        size: 'wide'
+      }
+    ];
+
+    const grid = document.getElementById('labGrid');
+    const modal = document.getElementById('modal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalText = document.getElementById('modalText');
+    const modalKicker = document.getElementById('modalKicker');
+    const modalFocus = document.getElementById('modalFocus');
+    const modalImage = document.getElementById('modalImage');
+    const modalGallery = document.getElementById('modalGallery');
+    const closeModal = document.getElementById('closeModal');
+    const cardsView = document.getElementById('cardsView');
+    const listView = document.getElementById('listView');
+    const header = document.getElementById('siteHeader');
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function renderLabs() {
+      grid.innerHTML = labs.map((lab, index) => `
+        <article class="lab-card reveal ${lab.size} group relative flex flex-col justify-between p-5 sm:p-7" data-index="${index}" tabindex="0" aria-label="${lab.title}">
+          <figure class="lab-photo" aria-hidden="true">
+            <img src="${lab.image}" alt="" loading="lazy">
+          </figure>
+          <div class="relative z-10">
+            <div class="mb-8 flex items-start justify-between gap-3">
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-sand leading-tight">${lab.tag}</p>
+              <span class="text-xs text-cream/35 shrink-0">${String(index + 1).padStart(2, '0')}</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold leading-tight text-cream">${lab.title}</h3>
+            <p class="mt-4 text-sm leading-6 text-cream/65">${lab.brief}</p>
+            <p class="details mt-5 text-sm leading-6 text-cream/60">${lab.full}</p>
+          </div>
+          <div class="relative z-[6] mt-8">
+            <span data-accent class="font-serif text-cream/10 transition group-hover:text-sand/30 block whitespace-nowrap" style="line-height: 1;">${lab.accent}</span>
+          </div>
+        </article>
+      `).join('');
+      observeReveals();
+      bindCards();
+    }
+
+    function bindCards() {
+      document.querySelectorAll('.lab-card').forEach((card) => {
+        card.addEventListener('mousemove', (event) => {
+          const rect = card.getBoundingClientRect();
+          card.style.setProperty('--mx', `${event.clientX - rect.left}px`);
+          card.style.setProperty('--my', `${event.clientY - rect.top}px`);
+        });
+        card.addEventListener('click', () => {
+          openLab(Number(card.dataset.index));
+        });
+        card.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openLab(Number(card.dataset.index));
+          }
+        });
+      });
+    }
+
+    function openLab(index) {
+      const lab = labs[index];
+      modalTitle.textContent = lab.title;
+      modalText.textContent = lab.full;
+      modalKicker.textContent = lab.tag;
+      modalFocus.textContent = lab.accent;
+      renderModalGallery(lab);
+      modal.classList.remove('pointer-events-none', 'opacity-0', 'bg-cream/0');
+      modal.classList.add('modal-visible', 'opacity-100', 'bg-cream/40');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+      closeModal.focus();
+    }
+
+    function getGalleryImages(lab) {
+      const slug = lab.image.replace('assets/', '').replace('.jpg', '');
+      return [1, 2, 3, 4].map((number) => `assets/galleries/${slug}-${String(number).padStart(2, '0')}.jpg`);
+    }
+
+    function renderModalGallery(lab) {
+      const images = getGalleryImages(lab);
+      modalImage.src = images[0];
+      modalImage.alt = `${lab.title} — фото 1`;
+      modalGallery.innerHTML = images.map((image, index) => `
+        <button class="gallery-thumb focus-ring ${index === 0 ? 'active' : ''}" type="button" aria-label="Показать фото ${index + 1}">
+          <img src="${image}" alt="" loading="lazy">
+        </button>
+      `).join('');
+
+      modalGallery.querySelectorAll('.gallery-thumb').forEach((button, index) => {
+        button.addEventListener('click', () => {
+          modalImage.src = images[index];
+          modalImage.alt = `${lab.title} — фото ${index + 1}`;
+          modalGallery.querySelectorAll('.gallery-thumb').forEach((thumb) => thumb.classList.remove('active'));
+          button.classList.add('active');
+        });
+      });
+    }
+
+    function hideModal() {
+      modal.classList.add('pointer-events-none', 'opacity-0', 'bg-cream/0');
+      modal.classList.remove('modal-visible', 'opacity-100', 'bg-cream/40');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+    }
+
+    function observeReveals() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: .16 });
+
+      document.querySelectorAll('.reveal:not(.visible)').forEach((element) => observer.observe(element));
+    }
+
+    function setView(mode) {
+      const isList = mode === 'list';
+      grid.classList.toggle('list-mode', isList);
+      cardsView.classList.toggle('bg-sand', !isList);
+      cardsView.classList.toggle('text-night', !isList);
+      cardsView.classList.toggle('text-cream/60', isList);
+      listView.classList.toggle('bg-sand', isList);
+      listView.classList.toggle('text-night', isList);
+      listView.classList.toggle('text-cream/60', !isList);
+    }
+
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header-active', window.scrollY > 34);
+    }, { passive: true });
+
+    closeModal.addEventListener('click', hideModal);
+    document.getElementById('modalBackdrop').addEventListener('click', hideModal);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') hideModal();
+    });
+
+    // Swipe down to close modal on mobile
+    let touchStartY = 0;
+    const modalPanel = document.querySelector('.modal-panel');
+    modalPanel.addEventListener('touchstart', (e) => {
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+    modalPanel.addEventListener('touchend', (e) => {
+      const deltaY = e.changedTouches[0].clientY - touchStartY;
+      if (deltaY > 80 && modalPanel.scrollTop === 0) hideModal();
+    }, { passive: true });
+
+    cardsView.addEventListener('click', () => setView('cards'));
+    listView.addEventListener('click', () => setView('list'));
+
+    mobileMenuButton.addEventListener('click', () => {
+      const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', String(!expanded));
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    renderLabs();
+    observeReveals();
+
+    // Single consistent accent font size
+    function fitAccentWords() {
+      document.querySelectorAll('.lab-card [data-accent]').forEach((span) => {
+        span.style.fontSize = '4.5rem';
+      });
+    }
+
+    fitAccentWords();
+    window.addEventListener('resize', fitAccentWords);
+  </script>
+
+
+</body></html>
